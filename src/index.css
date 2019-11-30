@@ -21,22 +21,31 @@ a{
 	padding: 10px 0;
 }
 
+.buttonMob{
+	text-align: right;
+	background-color: #333;
+	padding: 3% 3% 2% 3%;
+}
+
 /*Media Queries*/
 
 @media screen and (max-width: 480px){
-	.nav{flex-direction: column;}
+	.header{display: flex; flex-direction: column;}
+	.nav{flex-direction: column; display: none;}
 	.nav a{width: 100%;}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px){
-	.nav{flex-direction: column;}
+	.nav{flex-direction: column; display: none;}
 	.nav a{width: 100%;}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1199px){
 	.nav a{width: 25%;}
+	.buttonMob{display: none;}
 }
 
 @media screen and (min-width: 1200px){
 	.nav a{width: 25%;}
+	.buttonMob{display: none;}
 }

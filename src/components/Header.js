@@ -8,9 +8,9 @@ import Address from './header/Address'
 export default class Header extends React.Component{
 	render(){
 		return(
-			<div>
-				<Nav/>
+			<div className="header">
 				<ButtonMob/>
+				<Nav/>
 				<Logo/>
 				<Address/>
 			</div>
